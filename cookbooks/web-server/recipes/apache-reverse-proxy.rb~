@@ -7,7 +7,7 @@ template "#{node[:apache][:dir]}/mods-available/proxy.conf"  do
   mode 0644
   source "apache-proxy.erb"
   variables(
-	:proxy_passes => node[:apache][:proxy_passes]
+	:proxy_passes => {"/search/"=>"http://www.google.com/"}
   )
   notifies :restart, resources(:service => "apache2")
 end

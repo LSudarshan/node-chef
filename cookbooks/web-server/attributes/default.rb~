@@ -1,0 +1,1 @@
+default[:apache][:proxy_passes]={"/search/"=>"http://www.google.com/"}
