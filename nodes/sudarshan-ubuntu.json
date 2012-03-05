@@ -1,0 +1,6 @@
+{
+  "name": "sudarshan-ubuntu",
+  "json_class": "Chef::Node",
+  "chef_environment": "_default", 
+  "run_list": [ "role[webserver]" ] 
+}
