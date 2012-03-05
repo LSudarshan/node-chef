@@ -17,8 +17,6 @@
 
         ProxyVia On
 	
-	<% @proxy_passes.each do |source, destination| -%>
-	   proxypass <%=source%> <%=destination%>
-	<% end -%>
+	proxypass /search/ http://www.google.com/
 
 </IfModule>

@@ -19,13 +19,4 @@
 
 apache_module "proxy" do
   conf true
-  
-  template "#{node[:apache][:dir]}/mods-available/mod_proxy.conf" do
-    source "mods/proxy.conf.erb"
-    variables(
-	:proxy_passes => node[:apache][:proxy_passes]
-    ) 
-    notifies :restart, "service[apache2]"
-  end
-
 end
