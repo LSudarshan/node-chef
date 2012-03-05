@@ -16,7 +16,4 @@
         # Set to one of: Off | On | Full | Block
 
         ProxyVia On
-	
-	proxypass /search/ http://www.google.com/
-
 </IfModule>
