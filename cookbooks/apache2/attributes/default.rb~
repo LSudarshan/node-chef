@@ -129,9 +129,6 @@ default[:apache][:worker][:maxsparethreads] = 192
 default[:apache][:worker][:threadsperchild] = 64
 default[:apache][:worker][:maxrequestsperchild] = 0
 
-# Mod Proxy attributes
-default[:apache][:proxy_passes] = {"/search/"=>"http://www.google.com/", "/buy/"=>"http://www.amazon.co.uk/"}
-
 # Default modules to enable via include_recipe
 
 default['apache']['default_modules'] = %w{
