@@ -1,5 +1,6 @@
 name "appserver"
 description "This is the app server role"
+override_attributes :node_app=>{:name=>"amazon-favourites"}
 run_list(
-  "recipe[nodejs]"
+  "recipe[nodejs]", "recipe[node-app]"
 )

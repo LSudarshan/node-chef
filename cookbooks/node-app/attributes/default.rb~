@@ -1,0 +1,1 @@
+default[:node_app][:dir] = "/usr/apps/"

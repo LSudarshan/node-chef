@@ -1,0 +1,10 @@
+description <%="node.js server for app #{app_name}"%>
+start on startup
+stop on shutdown
+
+
+respawn
+respawn limit 99 5
+
+exec node <%="#{app_location}#{app_name}/server.js"%> >> /var/log/node.log 2>&1
+
